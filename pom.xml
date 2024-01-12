@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
 
-  <groupId>Aug2023Selenium_POM_Naveen</groupId>
-  <artifactId>Aug2023Selenium_POM_Naveen</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+	<groupId>Aug2023POMSeries</groupId>
+	<artifactId>Aug2023POMSeries</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
 
-  <name>Aug2023Selenium_POM_Naveen</name>
-  <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
+	<name>Aug2023POMSeries</name>
+	<!-- FIXME change it to the project's website -->
+	<url>http://www.example.com</url>
 
-  <properties>
+	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>11</maven.compiler.source>
 		<maven.compiler.target>11</maven.compiler.target>
@@ -20,8 +21,7 @@
 		<aspectj.version>1.9.19</aspectj.version>
 	</properties>
 
-  <dependencies>
-   
+	<dependencies>
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
@@ -90,9 +90,6 @@
 
 	</dependencies>
 
-  
-
-  
 	<build>
 
 		<plugins>
@@ -116,7 +113,8 @@
 					<forkCount>3</forkCount>
 					<reuseForks>true</reuseForks>
 					<suiteXmlFiles>
-						<suiteXmlFile>src\test\resources\testrunner\testng.regrassion.xml</suiteXmlFile>
+						 <suiteXmlFile>src/test/resources/testrunners/testng_regression.xml</suiteXmlFile>
+						<!-- <suiteXmlFile>${suiteXmlFile}</suiteXmlFile> -->
 					</suiteXmlFiles>
 
 					<argLine>
